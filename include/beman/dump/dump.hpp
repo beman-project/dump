@@ -8,33 +8,30 @@
 #include <string_view>
 
 namespace beman::dump {
-    namespace detail {
-        template <std::size_t N>
-        constexpr auto format_string = []{
-            std::array<char, N * 3 - 1> result{};
+namespace detail {
+template <std::size_t N>
+constexpr auto format_string = [] {
+  std::array<char, N * 3 - 1> result{};
 
-            auto ptr = &result[0];
-            for (auto i = 0uz; i != N; ++i)
-            {
-                if (i > 0)
-                    *ptr++ = ' ';
-                *ptr++ = '{';
-                *ptr++ = '}';
-            }
+  auto ptr = &result[0];
+  for (auto i = 0uz; i != N; ++i) {
+    if (i > 0)
+      *ptr++ = ' ';
+    *ptr++ = '{';
+    *ptr++ = '}';
+  }
 
-            return result;
-        }();
+  return result;
+}();
 
-        template <>
-        inline constexpr std::array<char, 0> format_string<0>;
-    }
+template <> inline constexpr std::array<char, 0> format_string<0>;
+} // namespace detail
 
-    template <typename ... Args>
-    void dump(Args&&... args)
-    {
-        std::println(std::string_view(detail::format_string<sizeof...(Args)>), std::forward<Args>(args)...);
-    }
+// TODO: Need documentation
+template <typename... Args> void dump(Args &&...args) {
+  std::println(std::string_view(detail::format_string<sizeof...(Args)>),
+               std::forward<Args>(args)...);
 }
+} // namespace beman::dump
 
 #endif // BEMAN_DUMP_DUMP_HPP_INCLUDED
-
