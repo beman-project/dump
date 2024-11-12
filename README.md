@@ -6,7 +6,8 @@ SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 
 ![Continuous Integration Tests](https://github.com/beman-project/dump/actions/workflows/ci_tests.yml/badge.svg)
 
-`std::dump` prints its arguments space-separated with a new-line.
+`beman::dump::dump()` prints its arguments space-separated with a new-line. This
+is useful as a debugging utility.
 A call to `std::dump(arg1, arg2, …, argn)` is equivalent to `std::println(“{} {} … {}”, arg1, arg2, …, argn)`
 
 `std::dump` is proposed by [P2879](https://wg21.link/P2879). This project currently implements R0.
