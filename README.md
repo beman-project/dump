@@ -85,7 +85,7 @@ cmake --install build --prefix /opt/beman.dump
 If you want to use `beman.dump` from your project, you can include `beman/dump/*.hpp`  files from your C++ source files
 
 ```cpp
-#include <beman/dump/identity.hpp>
+#include <beman/dump/dump.hpp>
 ```
 
 and directly link with `libbeman.dump.a`
