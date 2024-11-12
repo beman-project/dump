@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.23)
 
 project(
   beman.dump
-  DESCRIPTION "std::dump that prints its arguments space-separated with a new-line"
+  DESCRIPTION "A dump function that prints its arguments space-separated with a new-line"
   LANGUAGES CXX)
 
 include(CTest)
