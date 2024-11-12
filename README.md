@@ -14,6 +14,10 @@ A call to `beman::dump::dump(arg1, arg2, …, argn)` is equivalent to `std::prin
 
 ## Building beman.dump
 
+## Usage
+
+TODO
+
 ### Dependencies
 <!-- TODO Darius: rewrite section!-->
 
