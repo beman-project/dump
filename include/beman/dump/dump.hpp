@@ -9,6 +9,7 @@
 
 namespace beman::dump {
 namespace detail {
+// TODO: Need documentation
 template <std::size_t N>
 constexpr auto format_string = [] {
   std::array<char, N * 3 - 1> result{};
