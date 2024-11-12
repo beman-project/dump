@@ -4,6 +4,7 @@
 #define BEMAN_DUMP_DUMP_HPP_INCLUDED
 
 #include <array>
+#include <functional>
 #include <print>
 #include <string_view>
 
@@ -11,7 +12,7 @@ namespace beman::dump {
 namespace detail {
 // TODO: Need documentation
 template <std::size_t N>
-constexpr auto format_string = [] {
+constexpr auto format_string = std::invoke([] {
   std::array<char, N * 3 - 1> result{};
 
   auto ptr = &result[0];
@@ -23,7 +24,7 @@ constexpr auto format_string = [] {
   }
 
   return result;
-}();
+});
 
 template <> inline constexpr std::array<char, 0> format_string<0>;
 } // namespace detail
