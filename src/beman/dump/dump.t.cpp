@@ -13,5 +13,3 @@ TEST(DumpTest, format_string)
     EXPECT_EQ(std::string_view(format_string<2>), "{} {}");
     EXPECT_EQ(std::string_view(format_string<3>), "{} {} {}");
 }
-
-
