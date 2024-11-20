@@ -4,7 +4,7 @@ SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 
 # beman.dump: A tool for dumping an object's value to standard output
 
-![Continuous Integration Tests](https://github.com/beman-project/dump/actions/workflows/ci_tests.yml/badge.svg)
+![Continuous Integration Tests](https://github.com/bemanproject/dump/actions/workflows/ci_tests.yml/badge.svg)
 
 `beman::dump::dump()` prints its arguments space-separated with a new-line. This
 is useful as a debugging utility.
