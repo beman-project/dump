@@ -4,9 +4,9 @@ SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 
 # beman.example: A Beman Library Example
 
-![Continuous Integration Tests](https://github.com/beman-project/Example/actions/workflows/ci_tests.yml/badge.svg)
+![Continuous Integration Tests](https://github.com/bemanproject/Example/actions/workflows/ci_tests.yml/badge.svg)
 
-`beman.example` is a minimal C++ library conforming to [The Beman Standard](https://github.com/beman-project/beman/blob/main/docs/beman-standard.md). This can be used as a template for those intending to write Beman libraries. It may also find use as a minimal and modern  C++ project structure.
+`beman.example` is a minimal C++ library conforming to [The Beman Standard](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_STANDARD.md). This can be used as a template for those intending to write Beman libraries. It may also find use as a minimal and modern  C++ project structure.
 
 Implements: `std::identity` proposed in [Standard Library Concepts (P0898R3)](https://wg21.link/P0898R3).
 
