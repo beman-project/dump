@@ -1,7 +1,7 @@
 <!--
 SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 -->
-bla bla
+
 # beman.example: A Beman Library Example
 
 ![Continuous Integration Tests](https://github.com/bemanproject/Example/actions/workflows/ci_tests.yml/badge.svg)
