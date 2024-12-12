@@ -4,13 +4,15 @@ SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 
 # beman.dump: A tool for dumping an object's value to standard output
 
-![Continuous Integration Tests](https://github.com/bemanproject/dump/actions/workflows/ci_tests.yml/badge.svg)
+<img src="https://github.com/bemanproject/beman/blob/f5eedad83c135d9ecff22f465e99800b5965d2ce/docs/img/logo-beman-library-dropped.png" style="width:10%; height:auto;">  ![Continuous Integration Tests](https://github.com/bemanproject/dump/actions/workflows/ci_tests.yml/badge.svg)
 
 `beman::dump::dump()` prints its arguments space-separated with a new-line. This
 is useful as a debugging utility.
 A call to `beman::dump::dump(arg1, arg2, …, argn)` is equivalent to `std::println(“{} {} … {}”, arg1, arg2, …, argn)`
 
-- Implements: [Proposal of `std::dump` (P2879R0)](https://wg21.link/P2879R0)
+Implements: [Proposal of `std::dump` (P2879R0)](https://wg21.link/P2879R0)
+
+**Status**: [Dropped. Never got completed.](https://github.com/bemanproject/beman/blob/f5eedad83c135d9ecff22f465e99800b5965d2ce/docs/BEMAN_LIBRAY_MATURITY_MODEL.md#dropped-never-got-completed).
 
 ## Building beman.dump
 
