@@ -12,7 +12,7 @@ A call to `beman::dump::dump(arg1, arg2, …, argn)` is equivalent to `std::prin
 
 Implements: [Proposal of `std::dump` (P2879R0)](https://wg21.link/P2879R0)
 
-**Status**: [Retired. No longer maintained or actively developed.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#retired-no-longer-maintained-or-actively-developed).
+**Status**: [Retired. No longer maintained or actively developed.](https://github.com/bemanproject/beman/blob/main/docs/BEMAN_LIBRARY_MATURITY_MODEL.md#retired-no-longer-maintained-or-actively-developed)
 
 ## Building beman.dump
 
